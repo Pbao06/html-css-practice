@@ -1,2 +1,2 @@
 # html-css-practice
-wed food I doing practice
+Journey to be come font-end dev 
