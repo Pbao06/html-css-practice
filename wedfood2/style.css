@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Seaweed+Script&display=swap');
+html{
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    -webkit-text-size-adjust: 100%;
+
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Seaweed Script", sans-serif;
+}
+
+.sidebar{
+    z-index: 2;
+    width: 40%;
+    min-width: 300px;
+    font-size: 24px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    overflow: auto;
+}
+.sidebar .sidebar-link{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
+.sidebar .sidebar-link:hover{
+    background-color: #ccc;
+    color: black;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.navbar-list{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-list .list-con{
+    padding: 16px;
+    font-size: 24px;
+}
+.navbar-list .list-con i{
+    font-size: 30px;
+}
+.container{
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 8px 16px;
+}
+.container .food{
+    padding: 16px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+
+}
+.container .food .food-box{
+    padding: 0px 8px;
+    text-align: center;
+     flex: 1 1 calc(25% - 16px); /* 4 box mỗi hàng */
+     min-width: 200px; /* thu nhỏ tới mức này thì xuống hàng */
+     box-sizing: border-box;
+     width: 250px;
+     margin: 16px 0;
+}
+.container .food .food-box h3{
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+
+}
+.container .food .food-box img{
+    width: 100%;
+    vertical-align: middle;
+    border: none;
+    height: auto;
+}
+.container .food .food-box p{
+    margin: 15px 0;
+    
+
+}
+.container .sotrang{
+    padding: 32px;
+    text-align: center;
+}
+.container .sotrang .check{
+    display: inline-block;
+    width: auto;
+    font-size: 18px;
+}
+.container .sotrang a{
+    text-decoration: none;
+    padding: 8px 16px;
+    color:black;
+    align-items: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+ .sotrang .check a:hover{
+    color: #fff;
+    background-color: #000;
+}
+.container .about{
+    text-align: center;
+    padding: 32px 16px;
+
+}
+.container .about h3{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.container .about img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+.container .about .content-about{
+    padding: 32px 0;
+
+}
+.container .about .content-about h4,.container .about .content-about h6{
+    margin: 10px 0;
+}
+.container .about .content-about h4{
+    font-size: 20px;
+}
+.container .about .content-about h6 i{
+    font-size: 16px;
+    font-style: italic;
+    background-color: #ccc;
+    font-weight: 400;
+    padding: 3px;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.footer .footer-content{
+    padding: 32px 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer .footer-content .footer-box{
+    padding: 0px 8px;
+    flex: 1;
+
+}
+.footer .footer-content .footer-box h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.footer .footer-content .footer-box p{
+    margin: 15px 0;
+}
+.footer .footer-content .footer-box li{
+    padding: 16px;
+    list-style: none;
+}
+.footer .footer-content .footer-box img{
+    vertical-align: middle;
+    float: left;
+    margin-right: 16px;
+}
+.footer .footer-content .footer-box .diff{
+    display: inline-block;
+    padding: 0px 8px ;
+    margin-bottom: 16px;
+    color: #fff !important;
+    background-color: #000 !important;
+    opacity: 0.6;
+    font-size: 12px;
+}
